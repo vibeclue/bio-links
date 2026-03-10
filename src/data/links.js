@@ -11,23 +11,27 @@ export const links = [
   },
   {
     label: "Telegram",
-    url: "t.me/vibeclue",
+    url: "https://t.me/vibeclue",
     description: "Паблик с самыми умными людьми",
   },
   {
     label: "Boosty",
-    url: "boosty.to/vibeclue",
+    url: "https://boosty.to/vibeclue",
     description: "Помогает выжить в этом сложном мире",
   },
   {
     label: "Patreon",
-    url: "patreon.com/cw/VIBECLUE",
+    url: "https://patreon.com/cw/VIBECLUE",
     description: "Помогает выжить в этом сложном мире",
   },
-  { label: "Twitch", url: "twitch.tv/vibeclue", description: "Играем в игры" },
+  {
+    label: "Twitch",
+    url: "https://twitch.tv/vibeclue",
+    description: "Играем в игры",
+  },
   {
     label: "Донат",
-    url: "donationalerts.com/r/vibeclue",
-    description: "На пивко что бы лучше видео делались",
+    url: "https://donationalerts.com/r/vibeclue",
+    description: "На пивко чтобы лучше видео делались",
   },
 ];
