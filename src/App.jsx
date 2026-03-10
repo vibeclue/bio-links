@@ -1,10 +1,9 @@
 import "./App.css";
 import Header from "./components/Header";
 import LinkButton from "./components/LinkButton";
+import { links } from "./data/links";
 
 function App() {
-  const links = [{ label: "Twitch", url: "twitch.tv/vibeclue" }];
-
   return (
     <div className="app">
       <div className="app-container">

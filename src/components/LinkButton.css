@@ -1,0 +1,97 @@
+.link-frame {
+  display: block;
+  text-decoration: none;
+  background: #2a2250;
+  border: 4px solid #7df9ff;
+  border-radius: 24px;
+  padding: 14px;
+  box-shadow:
+    0 0 0 4px #6c5ce7,
+    0 12px 24px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.link-frame:hover {
+    transform: translateY(-4px);
+    background: #332861;
+}
+
+.link-frame:active {
+    transform: translateY(0);
+}
+
+.link-frame-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #1a1633;
+  border: 2px solid #ffd166;
+  border-radius: 16px;
+  padding: 18px 16px;
+}
+
+.link-texts {
+  min-width: 0;
+}
+
+.link-label {
+  margin: 0;
+  color: #fff7e6;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.link-caption {
+  margin: 6px 0 0;
+  color: #ff9ec7;
+  font-size: 13px;
+}
+
+.link-go {
+  flex-shrink: 0;
+  padding: 10px 14px;
+  border: 2px solid #fff7e6;
+  border-radius: 999px;
+  background: #ff4d8d;
+  color: #fff7e6;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: transform 0.2s ease;
+}
+
+.link-frame:hover .link-go {
+  transform: scale(1.05);
+} 
+
+@media (max-width: 480px) {
+  .link-frame {
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .link-frame-inner {
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+
+  .link-label {
+    font-size: 16px;
+  }
+
+  .link-caption {
+    font-size: 11px;
+  }
+
+  .link-go {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+}
