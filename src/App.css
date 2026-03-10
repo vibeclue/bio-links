@@ -1,0 +1,23 @@
+.page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.card{
+  width:min(500px,100%);
+  padding:25px;
+  border-radius:var(--radius);
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+}
+
+.links{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:10px;
+}
