@@ -1,11 +1,11 @@
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ title, subtitle }) => {
   return (
-    <header className="header">
-      <div className="badge">RETRO</div>
-      <h1 className="title">VIBECLUE</h1>
-      <p className="subtitle">Мои ссылки</p>
+    <header className="header-frame">
+      <div className="header-badge">Retro Profile</div>
+      <h1 className="header-title">{title}</h1>
+      <p className="header-subtitle">{subtitle}</p>
     </header>
   );
 };

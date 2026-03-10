@@ -1,11 +1,22 @@
 import "./App.css";
 import Header from "./components/Header";
+import LinkButton from "./components/LinkButton";
 
 function App() {
+  const links = [{ label: "Twitch", url: "twitch.tv/vibeclue" }];
   return (
-    <div className="page">
-      <div className="card">
-        <Header />
+    <div className="app">
+      <div className="app-container">
+        <Header
+          title="Bio Links"
+          subtitle="Все мои соцсети в одном ретро-пространстве"
+        />
+
+        <main className="links-list">
+          {links.map((link) => (
+            <LinkButton key={link.url} label={link.label} url={link.url} />
+          ))}
+        </main>
       </div>
     </div>
   );
