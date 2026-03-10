@@ -1,2 +1,36 @@
 .app {
+  min-height: 100vh;
+  padding: 32px 16px;
+  background: 
+    radial-gradient(circle at top, #3b2f63 0%, #1a1633 45%, #0f1021 100%);
+  color: #fff7e6;  
+}
+
+.app-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 20px 14px;
+  }
+
+  .app-container {
+    gap: 18px;
+  }
+
+  .links-list {
+    gap: 14px;
+  }
 }

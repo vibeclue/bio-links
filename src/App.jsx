@@ -4,12 +4,13 @@ import LinkButton from "./components/LinkButton";
 
 function App() {
   const links = [{ label: "Twitch", url: "twitch.tv/vibeclue" }];
+
   return (
     <div className="app">
       <div className="app-container">
         <Header
           title="Bio Links"
-          subtitle="Все мои соцсети в одном ретро-пространстве"
+          subtitle="Все мои ###### в одном ретро-пространстве"
         />
 
         <main className="links-list">
