@@ -3,7 +3,7 @@ import "./Header.css";
 const Header = ({ title, subtitle }) => {
   return (
     <header className="header-frame">
-      <div className="header-badge">Retro Profile</div>
+      <div className="header-badge">Мои био</div>
       <h1 className="header-title">{title}</h1>
       <p className="header-subtitle">{subtitle}</p>
     </header>

@@ -8,13 +8,24 @@ function App() {
     <div className="app">
       <div className="app-container">
         <Header
-          title="Bio Links"
-          subtitle="Все мои ###### в одном ретро-пространстве"
+          title="VIBECLUE"
+          subtitle={
+            <>
+              Все мои ссылки в одном месте.
+              <br />
+              Буду рад вас видеть!
+            </>
+          }
         />
 
         <main className="links-list">
           {links.map((link) => (
-            <LinkButton key={link.url} label={link.label} url={link.url} />
+            <LinkButton
+              key={link.url}
+              label={link.label}
+              url={link.url}
+              description={link.description}
+            />
           ))}
         </main>
       </div>
